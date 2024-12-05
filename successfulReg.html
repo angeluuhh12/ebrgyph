@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            margin: 0;
+        }
+
+        .success-container {
+            background: rgb(255,255,255);
+            background: linear-gradient(220deg, rgba(255,255,255,1) 0%, rgba(211,224,243,1) 100%);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .success-container h2 {
+            color: #1E3A8A;
+        }
+
+        .check-icon {
+            font-size: 100px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #364F97;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #3261e3;
+        }
+
+        .message {
+            margin-bottom: 20px;
+            color: #1E3A8A;
+        }
+
+        /* Mobile Responsive Styles (0-480px) */
+        @media (max-width: 480px) {
+            .success-container {
+                padding: 30px;
+                max-width: 100%;
+                max-height: 100vh;
+                height: 100%; /* Full height for mobile */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .check-icon {
+                font-size: 80px;
+                margin-bottom: 15px;
+            }
+
+            .success-container h2 {
+                font-size: 18px;
+            }
+
+            .message {
+                font-size: 14px;
+            }
+
+            .btn {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="success-container">
+
+        <!-- Success Message -->
+        <h2>Successful Registration! <i class='bx bxs-check-circle'></i></h2>
+        <p class="message">Your account has been successfully created.</p>
+
+        <!-- Continue Button -->
+        <button class="btn" onclick="redirectToHome()">Tap to Continue</button>
+    </div>
+
+    <script>
+        function redirectToHome() {
+            // Redirect to home page (e.g., "home.html")
+            window.location.href = "home.html"; // Replace with your home page URL
+        }
+    </script>
+
+</body>
+</html>
